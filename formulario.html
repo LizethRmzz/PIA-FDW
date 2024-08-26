@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: rgb(199, 255, 143);" >
+    <header>
+        <div class="barra5">
+            <a href="index.html">Volver al inicio</a>
+            <a href="habitat.html" style="margin-left: 500px;">Habitat</a>
+            <a href="comportamiento.html" style="margin-left: 70px;">Comportamiento y socialización</a>
+            <a href="impacto.html" style="margin-left: 70px;">Cambio climático</a>
+        </div>
+        <h1>Registra tu cuenta!</h1>
+        <div>Como nos importa saber sus opiniones sobre nuestra página, decidimos crear este espacio especialmente para ti!! Lo unico que necesitas hacer es crear tu cuenta y listo, podrás dejarnos tus comentarios.</div>
+    </header>
+    <br>
+    <br>
+    <main>
+        <h3>CREA TU CUENTA</h3>
+        <form action="">
+            <fieldset>
+                <label for="nombre">Nombre(s): </label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="apellidos" style="margin-left: 40px";>Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos">
+                <br>
+                <br>
+
+                <label for="color">Color favorito: </label>
+                <input type="color" name="colorfav" id="colorfav">
+
+                <label for="edad" style="margin-left: 50px;">Edad: </label>
+                <input type="number" name="edad" id="edad">
+                <br>
+                <br>
+
+                <label for="calificacion">Rango de calificación que le das a la página: </label>
+                <input type="range" name="calificacion" id="calificacion">
+                <br>
+                <br>
+
+                <label for="fecha">Ingresa tu fecha de nacimiento: </label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="telefono" style="margin-left: 50px;">Número telefónico: </label>
+                <input type="tel" name="telefono" id="telefono">
+                <br>
+                <br>
+
+                <label for="nuevo">¿Eres nuevo en la página?: </label>
+                <select name="nuevo" id="nuevo">
+                    <option value="1"></option>
+                    <option value="2">Si</option>
+                    <option value="3">No</option>
+                </select>
+                <br>
+                <br>
+                <hr>
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" name="correo" id="correo">
+                <br>
+                <br>
+
+                <label for="contraseña">Contraseña: </label>
+                <input type="text">
+                <br>
+                <br>
+
+                <input type="submit" value="Registrar">
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <hr>
+        <section>
+            <h2>Comentarios</h2>
+            <fieldset>
+                <h3>Tu opinion aquí:</h3>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="100" placeholder="..."></textarea>
+                <br>
+                <br>
+
+                <label for="foto">Agrega una imagen: </label>
+                <input type="file" name="foto" id="foto">
+                <br>
+                <br>
+
+                <input type="submit" value="Enviar">
+                
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>
