@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,10 @@
 <body style="background-color: rgb(215, 255, 175);">
     <header>
         <div class="barra3">
-            <a href="index.html">Volver al inicio</a>
-            <a href="habitat.html" style="margin-left: 700px;">Habitat</a>
-            <a href="impacto.html" style="margin-left: 70px;">Cambio climático</a>
-            <a href="formulario.html" style="margin-left: 70px;">Comentarios</a>   
+            <a href="{% url 'index' %}" >Volver al inicio</a>
+            <a href="{% url 'habitat' %}" style="margin-left: 700px;">Habitat</a>
+            <a href="{% url 'impacto' %}" style="margin-left: 70px;">Cambio climático</a>
+            <a href="{% url 'formulario' %}" style="margin-left: 70px;">Comentarios</a>   
         </div>
         <h1>Comportamiento y socialización</h1>
     </header>

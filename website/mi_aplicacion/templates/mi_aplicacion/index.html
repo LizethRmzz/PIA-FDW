@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +8,15 @@
     <meta name="description" content="Aprende más sore los pandas!!!">
     <meta name="author" content="Norma Ramirez">
     <title>Los osos pandas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilos.css' %}">
 </head>
 <body style="background-color: rgb(212, 255, 168);" >
     <header>
         <div class="barra">
-            <a href="habitat.html" style="margin-right: 200px;">Habitat</a>
-            <a href="comportamiento.html" style="margin-right: 200px;">Comportamiento y socialización</a>
-            <a href="impacto.html">Cambio climático</a>
-            <a href="formulario.html" style="margin-left: 200px;">Comentarios</a>    
+            <a href="{% url 'habitat' %}" style="margin-right: 200px;">Habitat</a>
+            <a href="{% url 'comportamiento' %}" style="margin-right: 200px;">Comportamiento y socialización</a>
+            <a href="{% url 'impacto' %}">Cambio climático</a>
+            <a href="{% url 'formulario' %}" style="margin-left: 200px;">Comentarios</a>    
         </div>
         <br>
         <h1>TODO LO QUE NECESITAS SABER SOBRE LOS OSOS PANDAS LO ENCONTRARÁS AQUÍ!!!!!</h1>
@@ -93,9 +94,6 @@
             <p>Derechos reservados &copy;</p>
         </address>
     </footer>
+    <script src="{% static 'js/anuncios.js' %}"></script>
 </body>
 </html>
-
-<!--lista con subtema: dl, dt, dd-->
-<!-- figure + img, figcaption -->
-<!--ol, ul listas, li elemento de la lista-->

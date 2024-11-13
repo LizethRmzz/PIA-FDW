@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,10 @@
 <body style="background-color: rgb(199, 255, 143);" >
     <header>
         <div class="barra5">
-            <a href="index.html">Volver al inicio</a>
-            <a href="habitat.html" style="margin-left: 500px;">Habitat</a>
-            <a href="comportamiento.html" style="margin-left: 70px;">Comportamiento y socialización</a>
-            <a href="impacto.html" style="margin-left: 70px;">Cambio climático</a>
+            <a href="{% url 'index' %}">Volver al inicio</a>
+            <a href="{% url 'habitat' %}" style="margin-left: 500px;">Habitat</a>
+            <a href="{% url 'comportamiento' %}" style="margin-left: 70px;">Comportamiento y socialización</a>
+            <a href="{% url 'impacto' %}" style="margin-left: 70px;">Cambio climático</a>
         </div>
         <h1>Registra tu cuenta!</h1>
         <div>Como nos importa saber sus opiniones sobre nuestra página, decidimos crear este espacio especialmente para ti!! Lo unico que necesitas hacer es crear tu cuenta y listo, podrás dejarnos tus comentarios.</div>
@@ -21,7 +22,7 @@
     <br>
     <main>
         <h3>CREA TU CUENTA</h3>
-        <form action="">
+        <form id="formulario", action="">
             <fieldset>
                 <label for="nombre">Nombre(s): </label>
                 <input type="text" name="nombre" id="nombre">
@@ -67,7 +68,7 @@
                 <br>
 
                 <label for="contraseña">Contraseña: </label>
-                <input type="text">
+                <input type="password" name="contraseña" id="contraseña">
                 <br>
                 <br>
 
@@ -95,5 +96,6 @@
             </fieldset>
         </section>
     </main>
+    <script src="{% static 'js/formulario2.js' %}"></script>
 </body>
 </html>

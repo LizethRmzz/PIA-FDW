@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +10,10 @@
 <body style="background-color: rgb(199, 255, 143);">
     <header>
         <div class="barra4">
-            <a href="index.html" style="margin-right: 600px;">Volver al inicio</a>
-            <a href="habitat.html" style="margin-right: 70px;">Habitat</a>
-            <a href="comportamiento.html">Comportamiento y socialización</a>
-            <a href="formulario.html" style="margin-left: 70px;">Comentarios</a>
+            <a href="{% url 'index' %}" style="margin-right: 600px;">Volver al inicio</a>
+            <a href="{% url 'habitat' %}" style="margin-right: 70px;">Habitat</a>
+            <a href="{% url 'comportamiento' %}" >Comportamiento y socialización</a>
+            <a href="{% url 'formulario' %}" style="margin-left: 70px;">Comentarios</a>
         </div>
         <h1>Impacto del cambio climático en los osos pandas</h1>
     </header>
